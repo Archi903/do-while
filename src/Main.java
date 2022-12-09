@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -30,5 +31,25 @@ public class Main {
         for (int j = 10; j > 0; j--) {
             System.out.print(j + (" "));
         }
+    }
+
+    public static void task3() {
+        System.out.println(" ");
+        System.out.println("Задание 3");
+
+        int Y = 12_000_000;
+        int human = 1000;
+        int oneHuman = Y / human;
+        int birth = oneHuman * 18;
+        int death = oneHuman * 8;
+        int totalInYear = birth - death;
+        int addPeople =0;
+        for(int year = 1; year <= 10; year ++) {
+            Y = Y + totalInYear + addPeople;
+
+            System.out.println("Год " + year + " численность населения составляет " + Y);
+        }
+
+
     }
 }
