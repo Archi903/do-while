@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1() {
@@ -90,14 +91,30 @@ public class Main {
                 System.out.println("Месяц " + i + " сумма накоплений равна " + deposit + " рублей");
         }
     }
+
     public static void task7() {
         System.out.println("Задание 7");
 
-        int firstFriday =3;
-        for (int allFrides = firstFriday; allFrides <= 31; allFrides = allFrides +7) {
+        int firstFriday = 3;
+        for (int allFrides = firstFriday; allFrides <= 31; allFrides = allFrides + 7) {
             System.out.println("Сегодня пятница, " + allFrides + "-е число. Необходимо подготовить отчет");
         }
     }
+
+    public static void task8() {
+        System.out.println("Задание 8");
+
+        int currentYear = 2022;
+        int cometEveryYear = 79;
+        int afterCurrentYear = currentYear + 100;
+        int beforeCurrentYear = currentYear - 200;
+        for (int i = 0; i < afterCurrentYear; i = i + cometEveryYear) {
+            if (beforeCurrentYear <= i)
+                System.out.println(i);
+
+        }
+    }
 }
+
 
 
